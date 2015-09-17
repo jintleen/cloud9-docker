@@ -8,7 +8,7 @@ MAINTAINER Kevin Delfour <kevin@delfour.eu>
 # ------------------------------------------------------------------------------
 # Install base
 RUN apt-get update
-RUN apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev sshfs \
+RUN apt-get install -y build-essential g++ curl wget nano libssl-dev apache2-utils git libxml2-dev sshfs sqlite3 \
     php5 php5-gd php5-mysqlnd php5-mcrypt php5-json php5-curl
 RUN php5enmod mcrypt
 
